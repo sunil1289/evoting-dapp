@@ -1,0 +1,92 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+.login-block {
+  background: rgb(223, 115, 255); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgb(204, 125, 228),
+    rgb(151, 38, 185)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgb(211, 152, 230),
+    rgb(154, 44, 187)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  float: left;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+  /* max-height: 700px; */
+}
+
+.login-sec {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+.login-sec h2 {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 30px;
+  color: #5b3b8c;
+}
+
+.login-sec h2:after {
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background: #a07fd3;
+  display: block;
+  margin-top: 20px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-login {
+  background: #de6262;
+  color: #fff;
+  font-weight: 600;
+}
+
+.form-group {
+  margin: 7px;
+  padding: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit-btn {
+  margin: 8px;
+  width: 95%;
+  justify-content: center;
+}
+
+#image_section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#img {
+  width: 95%;
+  margin: auto;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 770px) {
+  #img {
+    display: none;
+  }
+}
+
+.to_registration {
+  width: 100%;
+  justify-content: center;
+}

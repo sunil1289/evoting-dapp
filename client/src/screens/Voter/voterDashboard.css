@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-container {
+  height: 93vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  background-color: #212529;
+  color: white;
+  min-height: 100%;
+  padding-top: 1rem;
+}
+
+.sidebar-items {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 3rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-items:hover {
+  background-color: rgb(236, 230, 230);
+  color: #212529;
+}
+
+.sidebar-titles .link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebar-titles .link:hover {
+  color: #212529;
+}
+
+.dashboard {
+  padding: 2rem;
+  width: 100%;
+}
+
+.dashboard-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #212529;
+}
+
+.card {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card h1, .card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.card-vote {
+  background-color: #1181f8 !important;
+}
+
+.card-result {
+  background-color: #28a745 !important;
+}
+
+.card-chat {
+  background-color: #dc3545 !important;
+}
+
+.card-info {
+  background-color: #17a2b8 !important;
+}
+
+.card-live {
+  background-color: #ffc107 !important;
+  color: #212529;
+}
+.card-footer {
+  background-color: transparent; 
+  padding: 12px;
+  font-weight: 600; 
+  text-align: center;
+  color: #fff; 
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  background-color: #17a2b8; 
+  transition: 
+    background-color 0.3s ease, 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 1rem; 
+}
+
+.card-footer:hover {
+  background-color: #138496; 
+  color: #fff;
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.card-vote .card-footer {
+  background-color: #106ad6; 
+}
+.card-vote .card-footer:hover {
+  background-color: #0d5ab8; 
+}
+
+.card-result .card-footer {
+  background-color: #218838; 
+}
+.card-result .card-footer:hover {
+  background-color: #1c6e30;
+}
+
+.card-chat .card-footer {
+  background-color: #c82333; 
+}
+.card-chat .card-footer:hover {
+  background-color: #a71d2a; 
+}
+
+.card-info .card-footer {
+  background-color: #138496;
+}
+.card-info .card-footer:hover {
+  background-color: #0f6b7a; 
+}
+
+.card-live .card-footer {
+  background-color: #e0a800; 
+}
+.card-live .card-footer:hover {
+  background-color: #c69500; 
+}
+
+.card-footer span {
+  display: block;
+}
+
+.vote-div {
+  height: 23vh;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 993px) {
+  .sidebar {
+    height: 140vh;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .card h1, .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-footer a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    max-height: 425px !important;
+  }
+}
+
+.links,
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.links:hover,
+.link:hover {
+  color: black;
+}
+
+.bg-footer {
+  background-color: rgba(236, 231, 231, 0.911);
+}
+
+.ChatBot-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: transparent;
+  color: #17a2b8;
+  border: 2px solid #17a2b8;
+  border-radius: 50%;
+  padding: 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: none;
+  transition: 
+    transform 0.3s ease, 
+    background-color 0.3s ease, 
+    color 0.3s ease, 
+    box-shadow 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2.5s infinite;
+}
+
+.ChatBot-button:hover {
+  background-color: #17a2b8;
+  color: white;
+  box-shadow: 0 0 12px #17a2b8;
+  transform: scale(1.15);
+  animation: none;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(23, 162, 184, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(23, 162, 184, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(23, 162, 184, 0);
+  }
+}

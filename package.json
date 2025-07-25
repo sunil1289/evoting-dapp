@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "nodemailer": "^7.0.3",
+    "react-chatbot-kit": "^2.2.2",
+    "react-spinners": "^0.11.0",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "ganache": "^7.9.2",
+    "truffle": "^5.11.5"
+  }
+}

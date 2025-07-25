@@ -1,0 +1,151 @@
+body {
+  background-color: #203564;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vote-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0f1219;
+  width: 100%;
+}
+
+.vote-body {
+  margin: 0 auto;
+  background-color: #0f1219;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  flex-grow: 1;
+  gap: 20px; /* Space between cards */
+}
+
+.vote-body h1 {
+  width: 100%;
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main_card {
+  width: 280px;
+  border: 2px solid #2e7d32;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.candidate-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 50%;
+  border: 4px solid #4caf50;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #4caf50;
+  margin: 1rem 0;
+}
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 0;
+}
+
+.candidate-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #4caf50;
+  margin: 0;
+  text-align: center;
+}
+
+.candidate-party,
+.candidate-dob,
+.candidate-votecount {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #b0bec5;
+  margin: 0;
+  text-align: center;
+}
+
+.vote-btn {
+  background-color: #4caf50;
+  width: 180px;
+  height: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.vote-btn:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main_card {
+    width: 240px;
+    padding: 0.8rem;
+  }
+
+  .candidate-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .vote-btn {
+    width: 150px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .vote-body h1 {
+    font-size: 1.5rem;
+  }
+}

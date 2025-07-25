@@ -1,0 +1,27 @@
+
+.vote-body {
+  margin: auto;
+    background-color: #0f1219;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.navbar-brand-container {
+  padding: 1rem 2rem;
+  background-color: #1b1f3b; /* Deep blue or theme color */
+  text-align: left;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+
