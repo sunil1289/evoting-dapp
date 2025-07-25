@@ -65,22 +65,6 @@ Welcome to the official repository of the E-Voting System built on the Ethereum 
 
 
 ---------------------------------------------------
-📦 DEPLOYMENT
----------------------------------------------------
-- Docker compatible (Dockerfile included)
-- Supports local (Ganache), testnet (Goerli), and mainnet deployments
-- CI/CD setup possible for GitHub Actions
-
----------------------------------------------------
-🔒 SECURITY NOTES
----------------------------------------------------
-- All personal data is stored securely
-- Votes cannot be modified after submission
-- Voter can vote only once using blockchain identity
-
----------------------------------------------------
-
----------------------------------------------------
 🌐 LICENSE
 ---------------------------------------------------
 MIT License – Feel free to use, modify, and contribute!
